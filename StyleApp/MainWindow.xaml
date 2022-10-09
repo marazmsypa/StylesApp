@@ -1,0 +1,164 @@
+﻿<Window x:Class="StyleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyleApp"
+        mc:Ignorable="d"
+        Title="StyleApp" Height="1000" Width="1500" MinHeight="450" MinWidth="800" MaxHeight="2000" MaxWidth="1980" Icon="Assets/Img/emk.jpg" Style="{StaticResource MainWindow}" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="Кнопки" Style="{StaticResource LabelText}"></TextBlock>
+                <Button Content="Купить" Style="{StaticResource UpperButton}"></Button>
+                <Button Content="Заказать" Style="{StaticResource UpperButton}"></Button>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="0" Style="{StaticResource CellBorder}">
+            <StackPanel >
+                <TextBlock Text="ЧекБокс" Style="{StaticResource LabelText}"></TextBlock>
+                <CheckBox Content="Крутой" Style="{StaticResource CheckBox}"></CheckBox>
+                <CheckBox Content="Не очень крутой" IsChecked="True" Style="{StaticResource CheckBox}"></CheckBox>
+                <CheckBox Content="Обычный" Style="{StaticResource CheckBox}"></CheckBox>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="0" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="Радио" Style="{StaticResource LabelText}"></TextBlock>
+                <RadioButton Content="Поверка" Style="{StaticResource Radio}"></RadioButton>
+                <RadioButton Content="Приколинг" Style="{StaticResource Radio}"></RadioButton>
+                <RadioButton Content="Ало" Style="{StaticResource Radio}"></RadioButton>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="3" Grid.Row="0" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="ТекстБокс" Style="{StaticResource LabelText}"></TextBlock>
+                <TextBox  Style="{StaticResource TextBox}"></TextBox>
+                <TextBox  Style="{StaticResource TextBox}"></TextBox>
+                <PasswordBox  Style="{StaticResource PasswordBox}"></PasswordBox>
+                <PasswordBox  Style="{StaticResource PasswordBox}"></PasswordBox>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="ЛистБокс" Style="{StaticResource LabelText}"></TextBlock>
+                <ListBox>
+                    <ListBoxItem Content="Выбрать" ></ListBoxItem>
+                    <ListBoxItem Content="Выбрать"></ListBoxItem>
+                    <ListBoxItem Content="Выбрать"></ListBoxItem>
+                    <ListBoxItem Content="Выбрать"></ListBoxItem>
+                    <ListBoxItem Content="Выбрать"></ListBoxItem>
+                    <ListBoxItem Content="Выбрать"></ListBoxItem>
+                </ListBox>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="КомбоБокс" Style="{StaticResource LabelText}"></TextBlock>
+                <ComboBox Style="{StaticResource Combo}">
+                    <ComboBoxItem Content="Выбрать"></ComboBoxItem>
+                    <ComboBoxItem Content="Выбрать"></ComboBoxItem>
+                    <ComboBoxItem Content="Выбрать"></ComboBoxItem>
+                    <ComboBoxItem Content="Выбрать"></ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="1" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="ГрупБокс" Style="{StaticResource LabelText}"></TextBlock>
+                <GroupBox Header="Ваше имя">
+                    <StackPanel>
+                        <RadioButton Content="Петр"></RadioButton>
+                        <RadioButton Content="Иван"></RadioButton>
+                        <RadioButton Content="Игнат"></RadioButton>
+                        <RadioButton Content="Меня не зовут, я сам прихожу"></RadioButton>
+                    </StackPanel>
+                    
+                </GroupBox>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="3" Grid.Row="1" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="Слайдер" Style="{StaticResource LabelText}"></TextBlock>
+                <Slider Style="{StaticResource HotizintalSlider}"></Slider>
+                <Slider Style="{StaticResource HotizintalSlider}"></Slider>
+                <Slider Style="{StaticResource VerticalSlider}"></Slider>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="2" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="ДатаПикер" Style="{StaticResource LabelText}"></TextBlock>
+                <DatePicker>
+                   
+                </DatePicker>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="2" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="Календарь" Style="{StaticResource LabelText}"></TextBlock>
+                <Calendar></Calendar>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="2" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="ПрогрессБар" Style="{StaticResource LabelText}"></TextBlock>
+                <ProgressBar></ProgressBar>
+                <ProgressBar></ProgressBar>
+                <ProgressBar></ProgressBar>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="3" Grid.Row="2" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="РичТекстВью" Style="{StaticResource LabelText}"></TextBlock>
+
+                <RichTextBox VerticalScrollBarVisibility="Visible" Height="100">
+                    <FlowDocument>
+                        <Paragraph>
+                            в определённый момент я задался вопросом об идейной принадлежности ребилдов евангелиона, позвал хлеба и чекушку и мы вместе сняли какую то (фигню), где сидели и срались на почве качества ребилдов, Чекушка конечно смог выдать что то осмысленное, но от меня кроме матов и оскорблений ничего не услышишь
+
+
+
+
+                        </Paragraph>
+                        <Paragraph>
+                            00:00 оправдываюсь  за ещё одно видео по евангелиону
+
+                        </Paragraph>
+                        <Paragraph>
+                            00:30 проишествие
+                        </Paragraph>
+                        <Paragraph>
+                            00:48 объясняю попонятней
+                        </Paragraph>
+                        <Paragraph>
+                            01:53 чекушка
+                        </Paragraph>
+                        <Paragraph>
+                            04:44 я
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4" Style="{StaticResource CellBorder}">
+            <StackPanel>
+                <TextBlock Text="ДатаГрид" Style="{StaticResource LabelText}"></TextBlock>
+                <DataGrid AutoGenerateColumns="True" x:Name="mainGrid">
+                    
+                </DataGrid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
